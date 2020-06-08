@@ -1,0 +1,9 @@
+在使用后台spring框架之后，我们在这个基础上，添加springmvc中间键框架，首先配置好的它的xml文件
+<!-- 使用mvc注解 -->
+	<mvc:annotation-driven />
+
+决定采用注解驱动的方式，来将从前端的URL的请求映射到后端合适的controller
+同时决定采用multipartResolver 来向前端呈现view
+ 
+
+在tomcat容器里面的核心web.xml配置文件中，采用dispatcherServlet作为springmvc的入口控制器
